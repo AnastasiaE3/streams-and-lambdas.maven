@@ -55,7 +55,7 @@ public class TestPersonFactory implements TestConstants {
         // Given
 
         // When
-        Person[] personArray = factory.createPersonArray(collectionSize);
+        Person[] personArray = (Person[]) factory.createPersonArray(collectionSize);
 
         // Then
         Assert.assertEquals(collectionSize, personArray.length);
